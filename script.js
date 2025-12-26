@@ -6,10 +6,10 @@ function revealToSpan() {
     parent.classList.add("parent");
     child.classList.add("child");
 
-    child.textContent = elem.textContent;
+    child.innerHTML = elem.innerHTML;
     parent.appendChild(child);
 
-    elem.textContent = "";
+    elem.innerHTML = "";
     elem.appendChild(parent);
   });
 }
@@ -19,7 +19,7 @@ revealToSpan();
 const tl = gsap.timeline();
 gsap.to(".parent .child", {
   y: "-100%",
-  duration: 2,
+  duration: 1,
   delay: 2,
-  ease: Expo.EaseInOut
+  ease: Circ.EaseInOut
 });
