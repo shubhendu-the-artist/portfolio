@@ -1,7 +1,7 @@
 function revealToSpan() {
   document.querySelectorAll(".reveal").forEach((elem) => {
-    let parent = elem.createElement("span");
-    let child = elem.createElement("span");
+    let parent = document.createElement("span");
+    let child = document.createElement("span");
 
     parent.classList.add("parent");
     child.classList.add("child");
