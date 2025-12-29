@@ -89,10 +89,10 @@ function loaderAnimation() {
 
 function animateSVG() {
   tl = gsap.timeline();
-  tl.from("#Web>g>g>path, #Visual>g>g>polyline", {
+  tl.from("#Web>g>g>path", {
     fill: "none",
   })
-  .to("#Web>g>g>path, #Visual>g>g>polyline", {
+  .to("#Web>g>g>path", {
     strokeDashoffset: 0,
     fill: "#14cf93",
     duration: 2,

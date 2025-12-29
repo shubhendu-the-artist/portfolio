@@ -18,6 +18,7 @@ body {
   width: 100%;
 }
 #loader {
+  /* display: none; */
   position: absolute;
   width: 100%;
   height: 100vh;
@@ -29,6 +30,7 @@ body {
   color: #14cf93;
 }
 #green {
+  /* display: none; */
   position: absolute;
   top: 100%;
   width: 100%;
@@ -75,7 +77,7 @@ body {
 }
 #home {
   width: 100%;
-  height: 200vh;
+  height: 150vh;
   background-color: #f0f0f0;
 }
 #home #nav {
@@ -94,7 +96,6 @@ body {
   font-size: 14px;
   font-weight: 500;
   text-transform: uppercase;
-
 }
 #nav a .line {
   position: absolute;
@@ -121,13 +122,14 @@ body {
 #nav a:hover #line1 {
   width: 100%;
 }
+
 .row {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
   margin-top: 5vw;
-  padding: 0 7vw;
+  padding: 0 4vw;
   padding-right: 12vw;
   color: #333;
   line-height: 1;
@@ -152,7 +154,74 @@ body {
   height: 10.5vw;
   margin: 0 3vw;
 }
-path,
-polyline {
+path {
   stroke: #14cf93;
+}
+
+#imaginary {
+  margin-top: 16vw;
+  width: 100%;
+  padding: 0 4vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#imaginary-l {
+  width: 35%;
+  height: auto;
+}
+#imaginary-l h1 {
+  letter-spacing: 1px;
+  font-size: 2.4vw;
+  font-weight: 600;
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: #333;
+}
+
+#imaginary-r {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 60%;
+  height: 300px;
+}
+/* make it under the container */
+#imaginary-r .imgcntnr {
+  position: absolute;
+  width: 27vw;
+  height: 40vw;
+  border-radius: 1vw;
+  filter: grayscale();
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 1.2s;
+}
+#imaginary-r .imgcntnr:hover {
+  filter: grayscale(0);
+}
+#imaginary-l span {
+  color: #14cf93;
+  font-family: "Times New Roman", Times, serif;
+  font-style: italic;
+  text-transform: capitalize;
+}
+
+#imaginary-r .imgcntnr:nth-child(1) {
+  transform: translate(-40%, -8%) rotate(-20deg);
+  background-position: top;
+  background-image: url("https://i.pinimg.com/736x/ac/5b/f6/ac5bf6963eebf72661acb8238c7e582b.jpg");
+  background-size: cover;
+}
+#imaginary-r .imgcntnr:nth-child(2) {
+  transform: translate(-15%, 0%) rotate(-15deg);
+  background-size: cover;
+  /* opacity: 0; */
+  background-position: center;
+  background-image: url("https://i.pinimg.com/736x/aa/0d/35/aa0d3579564059d5c4c9c05cc267b466.jpg");
+}
+#imaginary-r .imgcntnr:nth-child(3) {
+  background-size: cover;
+  background-position: center;
+  background-image: url("https://i.pinimg.com/1200x/9b/f4/d2/9bf4d202bf071f7d758d8d44553227a4.jpg");
+  transform: translate(20%, 10%) rotate(-5deg);
 }
