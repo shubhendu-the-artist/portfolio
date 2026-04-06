@@ -1,45 +1,84 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
-    <title>Document</title>
+    <title>Shubhendu</title>
   </head>
+
   <body>
-    <div id="main">
-      <div id="loader">
-        <div id="topheading">
-          <h5 class="reveal">Design Portfolio</h5>
-          <h5 class="reveal">&copy; 2026</h5>
-        </div>
-        <h1 class="reveal">
-          <span>Shubhendu</span> <span class="title-load">Garai</span>
-          <span>is</span>
-          <span>a</span>
-        </h1>
+    <div id="loader">
+      <div id="topheading">
+        <h5 class="reveal">Design Portfolio</h5>
+        <h5 class="reveal">&copy; 2026</h5>
       </div>
-      <div id="green"></div>
+      <h1 class="reveal">
+        <span>Shubhendu</span> <span class="title-load">Garai</span>
+        <span>is</span>
+        <span>a</span>
+      </h1>
+    </div>
+    <div id="green"></div>
+
+    <div class="contact-btn-wrapper">
+      <button class="contact-btn">Contact</button>
+    </div>
+
+<div class="contact-overlay" id="contactOverlay">
+  <div class="contact-popup">
+    <button class="close-popup" id="closePopup">✕</button>
+
+    <h2>Connect with Me</h2>
+    <p>Tell me about your project or idea.</p>
+
+    <form id="contactForm">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+</div>
+
+    <div id="main" data-scroll-container>
+
       <div id="home">
-        <div id="nav">
+        <nav id="main-nav">
           <a href="#">Shubhendu Garai </a>
           <a href="#">Playbook</a>
           <a href="#">Social</a>
-          <a href="#">Contact</a>
-        </div>
+          <a href="#" id="desktop-contact">Contact</a>
+        </nav>
+
         <div class="row">
           <h1 class="reveal">Creative</h1>
-          <div class="text">
+          <div class="text reveal">
             <h5>CURRENTLY AVAILABLE FOR</h5>
             <h5>FREELANCE WORLDWIDE</h5>
           </div>
-          <div class="text">
+          <div class="text reveal">
             <h5>MY LOCAL TIME 10:50</h5>
             <h5>GMT (+5:30)</h5>
           </div>
         </div>
         <div class="row">
-          <img width="35vw" src="./down-arrow.svg" alt="scroll down" />
+          <img
+            class="down-arrow"
+            width="35vh"
+            src="./down-arrow.svg"
+            alt="scroll down"
+          />
           <div class="c-web">
             <svg
               id="Web"
@@ -59,11 +98,22 @@
           </div>
           <h1 class="reveal">Developer</h1>
         </div>
+        <div class="row">
+          <div class="text reveal">
+            <h5>CURRENTLY AVAILABLE FOR</h5>
+            <h5>FREELANCE WORLDWIDE</h5>
+          </div>
+          <div class="text reveal">
+            <h5>MY LOCAL TIME 10:50</h5>
+            <h5>GMT (+5:30)</h5>
+          </div>
+        </div>
+
         <div id="imaginary">
           <div id="imaginary-l">
             <h1>
-              I am Shubhendu Garai,
-              I <br>create <span>unconventional</span><br />
+              I am Shubhendu Garai, I <br />create
+              <span class="incline">Unconventional</span><br />
               yet functional &<br />
               visually pleasing<br />
               interfaces for the<br />
@@ -76,9 +126,120 @@
             <div class="imgcntnr"></div>
           </div>
         </div>
+
+        <div id="work">
+          <div class="workrow">
+            <h1>
+              Feet Wo<span class="incline">r</span>ks
+              <div class="mini">(05)</div>
+            </h1>
+            <svg
+              class="o-ui-arrow"
+              width="64"
+              height="64"
+              viewBox="0 0 64 64"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M3.10162 3.10156L62.9999 62.9999"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+              <path
+                d="M63 1.00001L63 63L0.999989 63"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+            </svg>
+          </div>
+
+          <div id="images">
+            <div class="container cont1">
+              <img
+                data-color="CCD0DD"
+                data-index="0"
+                data-scroll
+                data-scroll-speed="-1"
+                src="https://2022.abhishekjha.me/aeizei.7edf201c.png"
+                alt="Me"
+              />
+            </div>
+            <div class="container cont2">
+              <img
+                data-color="FF99A8"
+                data-index="1"
+                data-scroll
+                data-scroll-speed="-1"
+                src="https://2022.abhishekjha.me/display.835f9d62.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <div id="cursor">
+      <div>
+        <div class="crow">
+          <div class="ccircle"></div>
+          <div class="ccapsule">Behance</div>
+        </div>
+        <div id="elem">
+          <img
+            src="https://plus.unsplash.com/premium_photo-1680806491784-6d3d0d406562?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt=""
+          />
+          <img
+            src="https://images.unsplash.com/photo-1758716148192-49d1f2b1ec8a?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt=""
+          />
+          <img
+            src="https://images.unsplash.com/photo-1759337283317-a452c486d79a?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt=""
+          />
+          <img src="" alt="" />
+          <img src="" alt="" />
+        </div>
+      </div>
+
+      <div>
+        <div class="crow">
+          <div class="ccircle"></div>
+          <div class="ccapsule">Behance</div>
+        </div>
+        <div id="elem">
+          <img
+            src="https://plus.unsplash.com/premium_photo-1680806491784-6d3d0d406562?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt=""
+          />
+          <img
+            src="https://images.unsplash.com/photo-1758716148192-49d1f2b1ec8a?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt=""
+          />
+          <img
+            src="https://images.unsplash.com/photo-1759337283317-a452c486d79a?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt=""
+          />
+          <img src="" alt="" />
+          <img src="" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"
+      integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"
+      integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
